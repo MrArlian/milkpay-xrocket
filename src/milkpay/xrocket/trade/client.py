@@ -45,7 +45,7 @@ class TradeXRocket(Stollen):
         if trade_key is not None:
             fields.append(Header(name="Rocket-trade-Key", value=trade_key))
 
-        subdomain: str = "trade" if production else "trade.st"
+        subdomain: str = "trade" if production else "trade.testnet"
         super().__init__(
             base_url=f"https://{subdomain}.xrocket.tg",
             error_message_key=["message"],
